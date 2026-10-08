@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Google Maps</title>
+  <style>
+    /* Contenedor responsivo */
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px; /* Ancho máximo deseado */
+      padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px; /* Bordes redondeados (opcional) */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra elegante (opcional) */
+      margin: 0 auto; /* Centrar en la página */
+    }
+
+    /* Estilo para el iframe */
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor del Mapa -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/d/embed?mid=1dvnAbnXA7J0U7sGc4Q3Uwg1brhPYcR0&ehbc=2E312F&noprof=1" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</body>
+</html>
